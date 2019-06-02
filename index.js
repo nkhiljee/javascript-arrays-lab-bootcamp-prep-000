@@ -10,9 +10,9 @@ function destructivelyPrependKitten(name) {
 }
 
 function destructivelyRemoveLastKitten(name) {
-  return kittens.shift(name);
+  return kittens.slice(1);
 }
 
 function destructivelyRemoveFirstKitten(name) {
-  return kittens.slice(1)
+  return kittens.shift(name)
 }
